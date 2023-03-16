@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import {API_KEY, API_URL} from '../config'
 import {Preloader} from './Preloader'
+import {GoodsList} from '../components/GoodsList';
 
 function Shop () {
     const [goods, setGoods] = useState([]);
@@ -19,10 +20,11 @@ function Shop () {
         })
     }, [])
 
+
     return (
         <main className="container content">
             {
-                loading ? <Preloader /> : goods
+                loading ? <Preloader /> : <GoodsList goods={goods}/>
             }
         </main>
     )
