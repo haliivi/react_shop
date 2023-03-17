@@ -29,6 +29,11 @@ function Shop () {
             setOrder(newOrder);
         }
     }
+    const removeFromBasket = (id) => {
+        const newOrder = order.filter(item => item.id !== id)
+        setOrder(newOrder);
+
+    }
     const handleBasketShow = () => {setBasketShow(!isBasketShow);};
     
     useEffect(function getGoods() {
@@ -52,7 +57,7 @@ function Shop () {
                 loading ? <Preloader /> : <GoodsList goods={goods} addToBasket={addToBasket} />
             }
             {
-                isBasketShow && <BasketList order={order} handleBasketShow={handleBasketShow} />
+                isBasketShow && <BasketList order={order} handleBasketShow={handleBasketShow} removeFromBasket={removeFromBasket} />
             }
         </main>
     )

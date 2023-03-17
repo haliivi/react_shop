@@ -3,12 +3,13 @@ function BasketItem(props) {
         id,
         name,
         price,
-        quantity
+        quantity,
+        removeFromBasket = Function.prototype,
     } = props
     return (
         <li className="collection-item">
             {name} x {quantity} = {price.finalPrice * quantity} руб.
-            <span href="#!" class="secondary-content">
+            <span href="#!" class="secondary-content" onClick={() => removeFromBasket(id)}>
                 <i class="material-icons basket-delete">close</i>
             </span>
         </li>
