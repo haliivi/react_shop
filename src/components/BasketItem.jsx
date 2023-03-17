@@ -5,12 +5,17 @@ function BasketItem(props) {
         price,
         quantity,
         removeFromBasket = Function.prototype,
+        incrementQuantity = Function.prototype,
+        decrementQuantity = Function.prototype,
     } = props
     return (
         <li className="collection-item">
-            {name} x {quantity} = {price.finalPrice * quantity} руб.
-            <span href="#!" class="secondary-content" onClick={() => removeFromBasket(id)}>
-                <i class="material-icons basket-delete">close</i>
+            {name} x 
+            <i onClick={() => decrementQuantity(id)} className="material-icons basket-quantity">remove</i>
+            {quantity}
+            <i onClick={() => incrementQuantity(id)} className="material-icons basket-quantity">add</i> = {price.finalPrice * quantity} руб.
+            <span href="#!" className="secondary-content" onClick={() => removeFromBasket(id)}>
+                <i className="material-icons basket-delete">close</i>
             </span>
         </li>
     )
