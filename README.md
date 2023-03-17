@@ -1,2 +1,2 @@
 Portfolio project react_shop.
-<a href="https://github.com/haliivi/react_shop.git">Demo</a>
+<a href="https://haliivi.github.io/react_shop">Demo</a>
