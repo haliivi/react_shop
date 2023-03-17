@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/haliivi/react_shop/static/css/main.97bb63f9.css",
-    "main.js": "/haliivi/react_shop/static/js/main.84a4222e.js",
-    "index.html": "/haliivi/react_shop/index.html",
-    "main.97bb63f9.css.map": "/haliivi/react_shop/static/css/main.97bb63f9.css.map",
-    "main.84a4222e.js.map": "/haliivi/react_shop/static/js/main.84a4222e.js.map"
+    "main.css": "/react_shop/static/css/main.97bb63f9.css",
+    "main.js": "/react_shop/static/js/main.84a4222e.js",
+    "index.html": "/react_shop/index.html",
+    "main.97bb63f9.css.map": "/react_shop/static/css/main.97bb63f9.css.map",
+    "main.84a4222e.js.map": "/react_shop/static/js/main.84a4222e.js.map"
   },
   "entrypoints": [
     "static/css/main.97bb63f9.css",
